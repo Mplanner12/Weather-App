@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,100;1,700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins",  Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  background-image: url(bgr.jpg );
+  font-size: 120%;
+  background-size: 200vh;
+}
+
+.card{
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 60%;
+  height: 18vh;
+  max-width: 420px;
+  margin: 20em;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 3.6em;
+  width: 3.8em;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+}
+
+.button:hover{
+  background: #7c7c7c2b;
+}
+
+input.search-bar{
+  outline: none;
+  border: none;
+  padding: 0.7em 1em;
+  border-radius: 18px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+h1.temp{
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.description{
+  text-transform: capitalize;
+  margin-left: 6px
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.weather.loading{
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+  
+}
+
+.weather.loading:after{
+  visibility: visible;
+  content: loading;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
